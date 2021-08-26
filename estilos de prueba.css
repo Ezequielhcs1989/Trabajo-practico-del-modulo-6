@@ -1,0 +1,38 @@
+.col h1 {
+    text-align: center;
+    margin: revert;
+    padding: revert;
+}
+
+.col h5 {
+    margin: 3px;
+    padding: 3px;
+}
+
+.header {
+    width: auto;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+}
+*{ margin: 0; padding: 0;}
+
+.section {
+    margin: 50px auto  0px;
+    overflow: hidden;
+    
+
+}
+
+h1 { 
+    text-align: center;
+    margin: revert;
+    padding: 55px;
+}
+a h1 {
+
+    margin: 15px;
+    padding: 15px;
+    width: auto;
+}
