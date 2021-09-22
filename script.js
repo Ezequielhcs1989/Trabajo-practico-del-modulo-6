@@ -6,3 +6,12 @@ if (nombreUsuario.match(/^[A-Z]+$/i)) {
 
 
 } else { alert(" Usted no ingreso un campo aceptable o no ingreso ningun campo.") }
+
+//aca se rompe todo.
+
+let sosPeronista = prompt("vos sos Peronista ? Si / No")
+
+if (sosPeronista == "si") {
+    alert(" AH sos un terrible pelotudo")
+
+} else if (sosPeronista == "no") { alert("Me caes bien") }
