@@ -7,6 +7,8 @@ if (nombreUsuario.match(/^[A-Z]+$/i)) {
 
 } else { alert(" Usted no ingreso un campo aceptable o no ingreso ningun campo.") }
 
+
+
 //aca se rompe todo lala.
 
 let sosPeronista = prompt("vos sos Peronista ? Si / No")
