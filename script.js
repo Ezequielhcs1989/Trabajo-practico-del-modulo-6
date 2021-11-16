@@ -4,7 +4,7 @@ function darBienvenida() {
     let speech = new SpeechSynthesisUtterance();
     console.log(nombreUsuario, speech);
     if (nombreUsuario) {
-        var texto = 'Bienvenido ' + nombreUsuario + ' gracias por entrar a mi sitio web, ahora por favor contesta esta pregunta, ¿sos Peronista?';
+        var texto = 'Bienvenido ' + nombreUsuario + ' gracias por entrar a mi sitio web, ahora por favor contesta si eres peronista';
         speech.lang = 'es';
         speech.text = texto;
         speechSynthesis.speak(speech);
@@ -12,23 +12,11 @@ function darBienvenida() {
     }
 }
 
-function peronSi() {
+function peron(msg) {
     let speech = new SpeechSynthesisUtterance();
     console.log(sosPeronista, speech);
     if (sosPeronista) {
-        var texto = 'Ah sos terrible pelotudo';
-        speech.lang = 'es';
-        speech.text = texto;
-        speechSynthesis.speak(speech);
-
-    }
-}
-
-function peronNo() {
-    let speech = new SpeechSynthesisUtterance();
-    console.log(sosPeronista, speech);
-    if (sosPeronista) {
-        var texto = 'Me caes bien';
+        var texto = msg;
         speech.lang = 'es';
         speech.text = texto;
         speechSynthesis.speak(speech);
@@ -47,10 +35,8 @@ if (nombreUsuario) {
 let sosPeronista = prompt("vos sos Peronista ? Si / No")
 
 if (sosPeronista == "si") {
-    alert(" AH sos un terrible pelotudo");
-    peronSi();
+    peron('Ah sos terrible pelotudo');
 
 } else if (sosPeronista == "no") {
-    alert("Me caes bien");
-    peronNo();
+    peron("todo ok");
 }
